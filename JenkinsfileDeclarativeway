@@ -30,7 +30,7 @@ timestamps()
                 sh"mvn clean package"
             }
         }
-        /*
+        
         stage('Excute SonarQube Report'){
             steps{
                 sh"mvn sonar:sonar"
@@ -52,7 +52,7 @@ timestamps()
 
             }
         }
-        */
+        
         post{
             success{
                 emailext body: '''Build over....Declarative Way - success
