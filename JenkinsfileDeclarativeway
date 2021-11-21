@@ -6,11 +6,11 @@ pipeline{
     }
     triggers {
      //Poll SCM
-     //pollSCM('* * * * *')
+     pollSCM('* * * * *')
      //Buid Periodically
      //cron('* * * * *')
      //GitHub WebHook
-     githubPush()
+    //githubPush()
     
    }
    options{
